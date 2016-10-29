@@ -1,6 +1,9 @@
 #include <iostream>
 
-int main() {
-	std::cout << "Hello!" << std::endl;
+#include "cpp_lib_skeleton/example.h"
+
+int main() 
+{
+	std::cout << meaning_of_life() << std::endl;
 	return 0;
 }

@@ -6,10 +6,12 @@ project(${PROJECT_NAME})
 
 set(CMAKE_CXX_FLAGS "-g -Wall")
 
-include_directories(include)
-
 set(SOURCE_FILES
 	src/main.cc
 )
 
-add_executable(cpp_app_skeleton ${SOURCE_FILES})
+add_executable(${PROJECT_NAME} ${SOURCE_FILES})
+
+add_subdirectory(libs/cpp_lib_skeleton)
+
+target_link_libraries(${PROJECT_NAME} cpp_lib_skeleton)
