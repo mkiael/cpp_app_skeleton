@@ -1,0 +1,3 @@
+[submodule "libs/cpp_lib_skeleton"]
+	path = libs/cpp_lib_skeleton
+	url = https://github.com/ml85/cpp_lib_skeleton.git
